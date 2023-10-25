@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -26,8 +25,16 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body class="bg-gray-400">
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="dnd-zone-drag-disabled" style="display: none; position: fixed; z-index: -5;">
+      <p>This is a disabled drag and drop list</p>
+    </div>
+    <div id="dnd-zone-active" style="display: none; position: fixed; z-index: -5;">
+      <p>Tab to one the items and press space-bar or enter to start dragging it</p>
+    </div>
+    <div id="dnd-action-aria-alert" role="alert" style="position: fixed; bottom: 0px; left: 0px; z-index: -5; opacity: 0; height: 0px; width: 0px;">
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
